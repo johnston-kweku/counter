@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-400 flex justify-center items-center min-h-screen">
+    <div class="bg-gray-800 text-white w-full md:w-[600px] text-center m-10 rounded-2xl space-x-2" >
+        <h1 class="font-bold pt-6">Number: </h1>
+        <h1 id="count-el" class="font-bold pb-6">0</h1>
+        <button id="btn" onclick="increment()"
+        class="bg-green-600 p-4 rounded-2xl font-bold hover:bg-green-500 transition
+        focus:outline-2 focus:ring-2 focus:ring-green-100 active:bg-green-800 m-4">
+            Increment
+        </button>
+        <button id="save-btn" onclick="save()" 
+        class="text-white font-bold p-4 rounded-2xl bg-violet-500 focus:outline-2 focus:ring-4 
+        focus:outline-violet-700 active:bg-violet-900">
+            Save
+        </button>
+       
+        <p id="save-el" class="font-bold">Previous entries: </p>
+    </div>
+    <script src="/JS/index.js"></script>
+</body>
+</html>
